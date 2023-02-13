@@ -1,0 +1,9 @@
+// SOld out / Album of Eagles, 3.0
+for (let l=0; l < bestSellingAlbums[4].genres.length; l++){
+    for (let m =0; m < bestSellingAlbums[5].genres.length; m++){
+        if (bestSellingAlbums[4].genres[l] === "soft rock" && bestSellingAlbums[5].genres[m] === "soft rock"){
+            albumOfEagles.isBothSoftRock = true;
+        }
+        
+    }
+}

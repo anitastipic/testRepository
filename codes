@@ -18,3 +18,32 @@ for (const album of bestSellingAlbums) {
     }
     console.log(bestSellingAlbums.iLikeIt)
     }
+
+
+// 05 i like it (Tobias)
+
+for (let n = 0; n < bestSellingAlbums.length; n++){
+    bestSellingAlbums[n].iLikeIt = false;
+    if (bestSellingAlbums[n].year <= 1980){
+        for (let p = 0; p < bestSellingAlbums[n].genres.length; p++){
+            if (
+                bestSellingAlbums[n].genres[p] === "soft rock" 
+                || bestSellingAlbums[n].genres[p] === "hard rock"
+                || bestSellingAlbums[n].genres[p] === "rock"
+                || bestSellingAlbums[n].genres[p] === "progressive rock"
+                )
+                {
+                    bestSellingAlbums[n].iLikeIt = true;
+            }
+        }
+        
+    }
+    else {
+        bestSellingAlbums[n].iLikeIt = false;
+    }
+}
+
+
+for (let q = 0; q < bestSellingAlbums.length; q++){
+    console.log(bestSellingAlbums[q].iLikeIt);
+}

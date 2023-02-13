@@ -7,3 +7,14 @@ for (let l=0; l < bestSellingAlbums[4].genres.length; l++){
         
     }
 }
+
+//SoldOut/DoYouLikeIt?,
+
+for (const album of bestSellingAlbums) {
+    if (album.artist === "Eagles") {
+        bestSellingAlbums.iLikeIt = true;
+    } else if (album.artist !== "Eagles") {
+        bestSellingAlbums.iLikeIt = false;
+    }
+    console.log(bestSellingAlbums.iLikeIt)
+    }
